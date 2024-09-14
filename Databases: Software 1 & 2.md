@@ -82,8 +82,8 @@
     select (airport.elevation_ft*0.3048) as elevation_m
         -> from country,airport
         -> where country.iso_country = airport.iso_country and
-        -> country.name = "Iceland";
-![Exercises 3  Kysymys 5](https://github.com/user-attachments/assets/35a02ac3-99ad-4247-92de-ffdebae103eb)
+        -> game.screen_name = "Heini"
+![Exercises 3  Kysymys 5](https://github.com/user-attachments/assets/c62bd9a7-3ca6-45db-94f2-fe54d6fc3d38)
 
 ### Kysymys 6
     select name

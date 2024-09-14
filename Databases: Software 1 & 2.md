@@ -27,7 +27,7 @@
 ![Exercises 2  Kysymys 6](https://github.com/user-attachments/assets/546ac9dd-20fb-4302-842d-67d81e211946)
 
 ### Kysymys 7
-    select location from game where screen_name = "Vesa" ;
+    select location from game where screen_name = "Vesa";
 ![Exercises 2  Kysymys 7](https://github.com/user-attachments/assets/afec06c3-1582-4ace-8d8f-c1d5b57bb617)
 
 ### Kysymys 8
@@ -60,7 +60,7 @@
         -> from country,airport
         -> where country.iso_country = airport.iso_country and
         -> country.name = "France"
-        -> and airport.type like "%large%"
+        -> and airport.type like "%large%";
 ![Exercises 3  Kysymys 2](https://github.com/user-attachments/assets/29325d91-1e4e-4778-a8e5-6a3075d9e0e8)
 
 ### Kysymys 3

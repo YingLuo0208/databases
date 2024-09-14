@@ -79,11 +79,11 @@
 ![Exercises 3  Kysymys 4](https://github.com/user-attachments/assets/195feb0c-b4ba-4540-8c69-2fa0d9eef782)
 
 ### Kysymys 5
-    select (airport.elevation_ft/3) as elevation_m
+    select (airport.elevation_ft*0.3048) as elevation_m
         -> from country,airport
         -> where country.iso_country = airport.iso_country and
         -> country.name = "Iceland";
-![Exercises 3  Kysymys 5](https://github.com/user-attachments/assets/e773f868-e9d7-4b10-961c-cef66b49889f)
+![Exercises 3  Kysymys 5](https://github.com/user-attachments/assets/35a02ac3-99ad-4247-92de-ffdebae103eb)
 
 ### Kysymys 6
     select name

@@ -45,10 +45,14 @@ select screen_name , co2_budget, co2_consumed , (co2_budget - co2_consumed) as c
 ## Exercises 3: Multiple Table Queries
 
 ### Kysymys 1
-select country.name as "country name" ,airport.name as "airport name"
-    -> from country,airport
-    ->  where country.iso_country = airport.iso_country and
-->  country.name = "Iceland";
+select country.name as "country name" ,airport.name as "airport name"  
+
+    -> from country,airport  
+    
+    ->  where country.iso_country = airport.iso_country and  
+    
+->  country.name = "Iceland";  
+
 ![Exercises 3  Kysymys 1](https://github.com/user-attachments/assets/54397bbd-a7ac-4d5b-b364-6226481f834f)
 
 ### Kysymys 2

@@ -83,6 +83,7 @@
         -> from country,airport
         -> where game.location = airport.ident and
         -> game.screen_name = "Heini"
+        -> ;
 ![Exercises 3  Kysymys 5](https://github.com/user-attachments/assets/c62bd9a7-3ca6-45db-94f2-fe54d6fc3d38)
 
 ### Kysymys 6

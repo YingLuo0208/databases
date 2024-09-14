@@ -81,7 +81,7 @@
 ### Kysymys 5
     select (airport.elevation_ft*0.3048) as elevation_m
         -> from country,airport
-        -> where country.iso_country = airport.iso_country and
+        -> where game.location = airport.ident and
         -> game.screen_name = "Heini"
 ![Exercises 3  Kysymys 5](https://github.com/user-attachments/assets/c62bd9a7-3ca6-45db-94f2-fe54d6fc3d38)
 

@@ -49,25 +49,25 @@
 
         -> from country,airport  
     
-        ->  where country.iso_country = airport.iso_country and  
+        -> where country.iso_country = airport.iso_country and  
     
-    ->  country.name = "Iceland";  
+        -> country.name = "Iceland";  
 
 ![Exercises 3  Kysymys 1](https://github.com/user-attachments/assets/54397bbd-a7ac-4d5b-b364-6226481f834f)
 
 ### Kysymys 2
     select airport.name as "airport name"
         -> from country,airport
-        ->  where country.iso_country = airport.iso_country and
-        ->  country.name = "France"
+        -> where country.iso_country = airport.iso_country and
+        -> country.name = "France"
         -> and airport.type like "%large%"
 ![Exercises 3  Kysymys 2](https://github.com/user-attachments/assets/29325d91-1e4e-4778-a8e5-6a3075d9e0e8)
 
 ### Kysymys 3
     select country.name as "country_name" ,airport.name as "airport_name"
         -> from country,airport
-        ->  where country.iso_country = airport.iso_country and
-    ->  country.name = "Antarctica";
+        -> where country.iso_country = airport.iso_country and
+        -> country.name = "Antarctica";
 ![Exercises 3  Kysymys 3](https://github.com/user-attachments/assets/53a9c7f5-2a3e-42d0-bfab-ccd4ba4c39f2)
 
 ### Kysymys 4
@@ -81,8 +81,8 @@
 ### Kysymys 5
     select (airport.elevation_ft/3) as elevation_m
         -> from country,airport
-        ->  where country.iso_country = airport.iso_country and
-    ->  country.name = "Iceland";
+        -> where country.iso_country = airport.iso_country and
+        -> country.name = "Iceland";
 ![Exercises 3  Kysymys 5](https://github.com/user-attachments/assets/e773f868-e9d7-4b10-961c-cef66b49889f)
 
 ### Kysymys 6
@@ -96,16 +96,16 @@
 ### Kysymys 7
     select country.name
         -> from airport,game,country
-        ->  where airport.ident =  game.location and
+        -> where airport.ident =  game.location and
         -> country.iso_country = airport.iso_country and
-        ->  game.screen_name = "Ilkka"
+        -> game.screen_name = "Ilkka"
         -> ;
 ![Exercises 3  Kysymys 7](https://github.com/user-attachments/assets/fb7e730a-e81f-48ba-b840-32ba22aea91f)
 
 ### Kysymys 8
     select goal.name
         -> from game,goal,goal_reached
-        ->  where game.id = goal_reached.game_id and
+        -> where game.id = goal_reached.game_id and
         -> goal.id = goal_reached.goal_id and
         -> game.screen_name = "Heini"
         -> ;
@@ -113,8 +113,8 @@
 
 ### Kysymys 9
     select airport.name
-        ->  from airport,game,goal,goal_reached
-        ->  where airport.ident = game.location and
+        -> from airport,game,goal,goal_reached
+        -> where airport.ident = game.location and
         -> game.id = goal_reached.game_id and
         -> goal.id = goal_reached.goal_id and
         -> game.screen_name = "Ilkka" and
@@ -125,8 +125,8 @@
 ### Kysymys 10
     select country.name
         -> from airport,country,game,goal,goal_reached
-        ->  where country.iso_country = airport.iso_country and
-        ->  airport.ident = game.location and
+        -> where country.iso_country = airport.iso_country and
+        -> airport.ident = game.location and
         -> game.id = goal_reached.game_id and
         -> goal.id = goal_reached.goal_id and
         -> game.screen_name = "Ilkka" and

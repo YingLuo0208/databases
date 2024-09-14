@@ -67,6 +67,12 @@ select country.name as "country_name" ,airport.name as "airport_name"
 ![Exercises 3  Kysymys 3](https://github.com/user-attachments/assets/53a9c7f5-2a3e-42d0-bfab-ccd4ba4c39f2)
 
 ### Kysymys 4
+select airport.elevation_ft
+    -> from game,airport
+    -> where game.location = airport.ident and
+    -> game.screen_name = "Heini"
+    -> ;
+![Exercises 3  Kysymys 4](https://github.com/user-attachments/assets/195feb0c-b4ba-4540-8c69-2fa0d9eef782)
 
 ### Kysymys 5
 select (airport.elevation_ft/3) as elevation_m

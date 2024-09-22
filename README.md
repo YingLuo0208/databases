@@ -181,30 +181,30 @@
     -> from country
     -> where iso_country in (
     -> select iso_country
-    ->  from airport
-    ->  where name like "Satsuma%");
+    -> from airport
+    -> where name like "Satsuma%");
 ![Exercises 5  Kysymys 1](https://github.com/user-attachments/assets/dc0a77dc-49bb-4fee-8a0a-9c3bb851c43a)
 
 ### Kysymys 2 
     select name
     -> from airport
-    ->  where iso_country in (
+    -> where iso_country in (
     -> select iso_country
     -> from country
-    ->  where name = "Monaco");
+    -> where name = "Monaco");
 ![Exercises 5  Kysymys 2](https://github.com/user-attachments/assets/b318450d-bc73-43d7-820d-424bf90afa49)
 
 ### Kysymys 3 
     select screen_name
     -> from game
-    ->  where id in (
-    ->  select game_id
-    ->  from goal_reached
+    -> where id in (
+    -> select game_id
+    -> from goal_reached
     -> where goal_id in (
-    ->  select id
-    ->  from goal
-    ->  where name = "CLOUDS" )
-    ->  );
+    -> select id
+    -> from goal
+    -> where name = "CLOUDS" )
+    -> );
 ![Exercises 5  Kysymys 3](https://github.com/user-attachments/assets/db2f70ef-158b-4494-86cc-cdfadf144815)
 
 ### Kysymys 4 
@@ -220,7 +220,7 @@
     -> where id not in (
     -> select goal_id
     -> from goal_reached
-    ->  where game_id in (
+    -> where game_id in (
     -> select id
     -> from game
     -> where screen_name = "Heini" )
@@ -251,11 +251,11 @@
 
 ### Kysymys 4 
     select screen_name
-    ->  from game
+    -> from game
     -> where co2_consumed in (
-    ->  select min(co2_consumed)
-    ->  from game
-    ->  );
+    -> select min(co2_consumed)
+    -> from game
+    -> );
 ![Exercises 6  Kysymys 4](https://github.com/user-attachments/assets/6590b7ac-a0a5-4834-a1f6-a80662aac22e)
 
 ### Kysymys 5 
@@ -268,18 +268,18 @@
 
 ### Kysymys 6 
     select country.name
-    -> from  country,airport
+    -> from country,airport
     -> where country.iso_country = airport.iso_country
-    -> group by  airport.iso_country
-    ->  having count(*) >= 1000 ;
+    -> group by airport.iso_country
+    -> having count(*) >= 1000 ;
 ![Exercises 6  Kysymys 6](https://github.com/user-attachments/assets/47658ac2-6db9-4b3a-8850-7c3028ab5321)
 
 ### Kysymys 7 
     select airport.name
-    ->  from airport
+    -> from airport
     -> where elevation_ft in (
     -> select max(elevation_ft)
-    ->  from airport
+    -> from airport
     -> );
 ![Exercises 6  Kysymys 7](https://github.com/user-attachments/assets/ae102f76-8476-458a-9797-ca69b0e00a46)
 
@@ -287,16 +287,16 @@
     select country.name
     -> from country,airport
     -> where country.iso_country = airport.iso_country and
-    ->  elevation_ft in (
+    -> elevation_ft in (
     -> select max(elevation_ft)
     -> from airport
-    ->  );
+    -> );
 ![Exercises 6  Kysymys 8](https://github.com/user-attachments/assets/93306833-1a04-48d4-bcf9-a8a9a5e1f939)
 
 ### Kysymys 9
      select count(*)
     -> from game,goal_reached
-    ->  where game.id = goal_reached.game_id
+    -> where game.id = goal_reached.game_id
     -> and game.screen_name = "Vesa"
     -> group by game.screen_name
     -> ;
@@ -324,7 +324,7 @@
 ![Exercises 7  Kysymys 2](https://github.com/user-attachments/assets/231b10fa-c4a3-4939-804f-a61b384568b0)
 
 ### Kysymys 3 
-    delete  from goal_reached ;
+    delete from goal_reached ;
     select * from goal_reached;
 ![Exercises 7  Kysymys 3](https://github.com/user-attachments/assets/d8564c19-2a7b-46ac-8c72-5751200c62da)
 

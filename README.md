@@ -5,6 +5,7 @@
 ### Kysymys 1  
     select * from goal;
 ![Exercises 2  Kysymys 1](https://github.com/user-attachments/assets/7a11caa7-b410-493a-9736-58006528ae8c)
+![Exercises 2  Kysymys 1](https://github.com/user-attachments/assets/5367008a-9ec9-4924-9ee7-f6fcd34c1b2a)
 
 ### Kysymys 2
     select name,type from airport where iso_country = "FI";
